@@ -1,0 +1,238 @@
+<!DOCTYPE html> <!--Any formatting changes that need to be made, make them on the INDEX page first-->
+<html lang="en">
+	<header>
+	<head>
+		<link href="styles.css" type="text/css" rel="stylesheet"/>
+		<title>HTML CheatSheet: Form</title> <!--(Fri. 14 August 2020 12:24am)In the future, note whether or not the topic is based in CSS or HTML. For right now, all webpages have HTML cheatsheet but sometime down the road this needs to change.-->
+		<meta charset="utf-8"/>
+	</head>
+	</header>
+	<body>
+		<!--Heading of the page-->
+		<h1 class="pageTitle">Forms in HTML</h1>
+		
+		<ul class="links">
+			<li><a href="index.html">Main</a></li>
+			<li><a href="intro.html">Introduction</a></li>
+			<li><a href="table.html">Tables</a></li>
+			<li><a href="form.html">Forms</a></li>
+			<li><a href="semantic.html">Semantic HTML</a></li>
+		</ul>
+		
+			<!--Name of table-->
+			<h2 class="tableHead">Form Element</h2>
+			<!--Beginning of table-->
+			<table id="formsheet">
+				<thead class="title">
+					<!--Column headings-->
+					<tr>
+						<th class="colHead1">Tag</th>
+						<th class="colHead2">Name</th>
+						<th class="colHead3">Description</th>
+						<th class="colHead4">Example</th>
+					</tr>
+				</thead>
+				<tbody>
+					 <!--(Fri. 31 July 2020 12:05pm) the class values names represents the element being dicussed in that row (eg. f-row, the 'f' stands for form)
+
+						 (Fri. 14 August 2020 12:25am) for right now, all files will share the same classes and indexes; although is says class=topicForm, the format will be apply to other files (such as the position file).-->
+						 
+					<!--INPUT-->
+					<tr class="topicInput">
+						<td class="element">&lt;input/&gt;</td>
+						<td class="name">Input Element</td>
+						<td class="description">Use to create input controls to accept data from the user. There are a vase number of types and attributes that are associated with the input tag; here we are discussing 8 common variations. <br>The <em>name</em> attribute and the <em>type</em> attribute are normally required for the element to run. 
+						<td class="example">&lt; input name = "food" type = "checkbox" value = "lasagna"/&gt;</td>
+					</tr>	 
+					
+					<tr class="topicInput">
+						<td class="element"></td>
+						<td class="name">Name Attribute</td>
+						<td class="description"><br>The <em>name</em> attribute is necessary to submit a form. In the examples column, the input with the missing name attribute will not be able to submit it's information.</td>
+						<td class="example">&lt; input name = "applepie" id = "dessert"/&gt;<br><br>
+						&lt; input id = "dessert"/&gt;</td>
+					</tr>	 
+					
+					<tr class="topicInput">
+						<td class="element"></td>
+						<td class="name">Checkbox Type</td>
+						<td class="description"><br>The <em>checkbox</em> type creates a single checkbox item. Multiple boxes can be created but need to share the same name atttibute for the input to work. Users can select multiple checkboxes at once.</td>
+						<td class="example">&lt; input type = "checkbox" name="dessert" value="applepie"/&gt;<br><br>
+						&lt; input type = "checkbox" name = "dessert" value = "chocolate chip cookie"/&gt;<br><br>
+						&lt; input type = "checkbox" name = "dessert" value = "vanilla icecream"/&gt;<br><br>
+						</td>
+					</tr>	 
+					
+					<tr class="topicInput">
+						<td class="element"></td>
+						<td class="name">Number Type</td>
+						<td class="description"><br>The <em>number</em> type allows users to type only numbers and a few special characters.</td>
+						<td class="example">&lt; input type = "number" name = "expiration date" /&gt;
+						</td>
+					</tr>
+					
+					<tr class="topicInput">
+						<td class="element"></td>
+						<td class="name">Range Type</td>
+						<td class="description"><br>The <em>range</em> type allows users to create a slider between a minimum and maximum value. The purpose of this type is more to create a visual widget.</td>
+						<td class="example">&lt; input type = "range" name = "Sweetness rating" min = "1" max = "10" step = "1" /&gt;
+						</td>
+					</tr>	 
+					
+					<tr class="topicInput">
+						<td class="element"></td>
+						<td class="name">Text Type</td>
+						<td class="description"><br>The <em>text</em> type displays a single blank line for inputting text.</td>
+						<td class="example">&lt; input type = "text" name = "Favorite Autumn Fruit" /&gt;
+						</td>
+					</tr>	 
+					
+					<tr class="topicInput">
+						<td class="element"></td>
+						<td class="name">Radio Button Type</td>
+						<td class="description"><br>The <em>radio</em> type allows users to create a radio button. Multiple radio buttons can be create but all must share the same name attribute. Unlike the checkbox type, only one radio button can be selected at a time.  </td>
+						<td class="example">
+						&lt; input type = "radio" name = "Type of cheese" value = "Colby" /&gt;<br><br>
+						&lt; input type = "radio" name = "Type of cheese" value = "Cheddar" /&gt;<br><br>
+						&lt; input type = "radio" name = "Type of cheese" value = "Swiss" /&gt;
+						</td>
+					</tr>	
+					
+					<tr class="topicInput">
+						<td class="element"></td>
+						<td class="name">Password Type</td>
+						<td class="description"><br>The <em>password</em> type displays a single line where the input information is censored. This type is used for inputting sensitive information. When submitting, the value is sent uncensored.</td>
+						<td class="example">&lt; input type = "text" name = "VegHead username" /&gt;<br><br>
+						&lt; input type = "password" name = "password" /&gt;
+						</td>
+					</tr>	 
+					
+					<tr class="topicInput">
+						<td class="element"></td>
+						<td class="name">Submit Type</td>
+						<td class="description"><br>The <em>submit</em> type displays a button that will execute an action (submit the form). By default, the text on the button reads 'submit'. </td>
+						<td class="example">&lt; input type = "submit" value = "send" /&gt;
+						</td>
+					</tr>	 
+					
+					<!--MAX ATTRIBUTE-->
+					<tr class="topicInput">
+						<td class="element">max = #</td>
+						<td class="name">Max Attribute</td>
+						<td class="description">The max attribute determines the maxium value (the highest value) for a number input field.</td> 
+						<td class="example">&lt; input type = "number"  max = "25" /&gt;</td>
+					</tr>	
+					
+					<!--MAXLENGTH ATTRIBUTE-->
+					<tr class="topicInput">
+						<td class="element">maxlength = #</td>
+						<td class="name">Maxlength Attribute</td>
+						<td class="description">The maxlength attribute determines the maxium value (the highest value) for a text input field.</td> 
+						<td class="example">&lt; input type = "text"  max = "250" /&gt;</td>
+					</tr>
+					
+						<!--REQUIRED ATTRIBUTE-->
+					<tr class="topicInput">
+						<td class="element">required</td>
+						<td class="name">Required Attribute</td>
+						<td class="description">The required attribute makes it mandatory for a value to be inputted in the field.</td> 
+						<td class="example">&lt; input type = "password"  name = "password" required/&gt;</td>
+					</tr>
+					
+						<!--SUBMITTING A FORM-->
+					<tr class="topicInput">
+						<td class="element">submitting a form</td>
+						<td class="name">Submitting A Form</td>
+						<td class="description">Once information is collected in a form, it can be sent somewhere else using action attribute and method attribute. Action attribute tells the form to send the information; an URL is involved. Method attribute tells the form what to do with the information once it is sent.  </td> 
+						<td class="example">&lt; form action = "/index.html" method = "PUT" &gt;&lt;/form&gt;</td>
+					</tr>
+					
+						<!--Pattern Attribute-->
+					<tr class="topicInput">
+						<td class="element">pattern = "[]"</td>
+						<td class="name">Pattern Attribute</td>
+						<td class="description"> A pattern attribute is used to validate a value when submitting a form. </td> 
+						<td class="example">
+							&lt; form action = "/index.html"&gt; 
+							<br> country code: 
+							<br><br> &lt; input type = "text" <br> name = "country_code" <br> pattern = "[A-Za-z]{3}" <br> title = "Three letter country code" &gt;
+							<br><br> &lt; input type = "submit" &gt;
+							<br><br> &lt;/form&gt;
+						</td>
+							
+					</tr>
+					
+						<!--Minlength Attribute-->
+					<tr class="topicInput">
+						<td class="element">minlength = "#"</td>
+						<td class="name">Minlength Attribute</td>
+						<td class="description">Users can be required to input a minimum amount of characters into a text field. The minlength attribute determines the smallest character count allowed.  </td> 
+						<td class="example">&lt; input type = "text" minlength = "5" &gt;</td>
+					</tr>
+					
+					<!--HTML FORM VALIDATORS-->
+					<tr class="topicInput">
+						<td class="element">HTML Form Validator</td>
+						<td class="name">HTML Form Validator</td>
+						<td class="description"> Different ways of validating the value of inputs before they are submitted. </td> 
+						<td class="example"></td>
+					</tr>
+					
+					<!--Min Attribute-->
+					<tr class="topicInput">
+						<td class="element">min = "#"</td>
+						<td class="name">Min Attribute</td>
+						<td class="description">Users can be required to input a minimum amount into a number field. The min attribute determines the smallest value allowed.  </td> 
+						<td class="example">&lt; input type = "number" min = "8" &gt;</td>
+					</tr>
+					
+					<!--FORM-->	 
+					<tr class="topicForm">
+						<td class="element">&lt;form&gt;&lt;/form&gt;</td> 
+						
+						<!-- (Thurs. 30 July 2020 11:55pm) Decide whether to format the row headings as a whole or individually. Right now they are coded for individual formatting.
+						(Fri. 14 August 2020 ) The decision was to format the row headings seperately, just wanted to answer my own question. -->
+						
+						<td class="name">Form</td>
+						<td class="description">Used for collecting and sending information to some source (whether it be external or within the same folder). <br>Paired with the <em>action</em> attribute and the <em>method</em> attribute. </td>
+						<td class="example">&lt;form method="post" action="index.html"&gt; Enter favorite comfort food:<br> &lt;input type="text" name="food"/&gt;<br> &lt;input type="submit"/&gt;&lt;/form&gt;</td>
+					</tr>
+					
+					
+					<!--LABEL-->
+					<tr class="topicLabel">
+						<td class="element">&lt;label&gt;&lt;/label&gt;</td>
+						<td class="name">Label</td>
+						<td class="description">Provides an ID for an <em>input</em> element; Almost always paired with the <em>id</em> attribute and the <em>for</em> attribute.</td>
+						<td class="example">&lt;label for="food"&gt; Name of food: &lt;/label&gt;</td>
+					</tr>
+					
+					<!--SELECT-->
+					<tr class="topicSelect">
+						<td class="element">&lt;select&gt;&lt;/select&gt;</td>
+						<td class="name">Select</td>
+						<td class="description">Used to create a dropdown list. Paired with the <em>name</em> attribute and the <em>value</em> attribute as well as the <em>option</em> element. </td>
+						<td class="example">&lt;select name="types of breads"&gt; &lt;option value="potato"&gt; Potato &lt;/option&gt; &lt;option value="wheat"&gt; Wheat &lt;/option&gt;<br> &lt;option value="white"&gt; White &lt;/option&gt; <br>&lt;/select&gt;</td>
+					</tr>
+					
+					<!--DATALIST-->
+					<tr class="topicDatalist">
+						<td class="element">&lt;datalist&gt;&lt;/datalist&gt;</td>
+						<td class="name">Datalist</td>
+						<td class="description">Creates an autocomplete/select function for a webpage. <br>Commonly paired with the <em>input</em> element, the <em>option</em> element, the <em>id</em> attribute, and the <em>value</em> attribute.</td>
+						<td class="example">&lt;input list="apples"/&gt; &lt;datalist id="apples"&gt; &lt;option value="fuji"/&gt;&lt;option value="granny smith"/&gt; &lt;option value="red delicious"/&gt; &lt;/datalist&gt;</td>
+					</tr>
+					
+					<!--TEXTAREA-->
+					<tr class="topicTextarea">
+						<td class="element">&lt;textarea&gt;&lt;/textarea&gt;</td>
+						<td class="name">Textarea</td>
+						<td class="description">
+						Used to create a form with multiple lines for input. 
+						<br>Commonly paired with the <em>rows</em> attribute, the <em>cols</em> attribute, and the <em>name</em> attribute. However, this is not a exhausted list; other attributes can be added if needed.</td>
+						<td class="example">&lt;textarea cols="5" row="6" name="recipe"&gt; &lt;/textarea&gt;</td>
+					</tr> 
+				</tbody>
+			</table>
+	</body>
+</html>

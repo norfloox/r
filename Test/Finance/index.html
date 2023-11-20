@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Financial DApp</title>
+</head>
+
+<body>
+    <h1>Financial DApp</h1>
+    <p>Your Address: <span id="userAddress"></span></p>
+    <p>Your Balance: <span id="userBalance"></span> ETH</p>
+    <input type="number" id="depositAmount" placeholder="Enter deposit amount">
+    <button onclick="depositFunds()">Deposit</button>
+    <input type="number" id="withdrawAmount" placeholder="Enter withdrawal amount">
+    <button onclick="withdrawFunds()">Withdraw</button>
+    <p>Contract Balance: <span id="contractBalance"></span> ETH</p>
+    <script src="web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

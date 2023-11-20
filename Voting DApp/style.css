@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#candidate-list, #results {
+    text-align: left;
+    display: inline-block;
+    margin: 20px;
+}
+
+#voting-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#candidate-select {
+    width: 200px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
